@@ -22,6 +22,7 @@
     [type]="'email'"
     [filedName]="'email'"
     [parentForm]="testForm" (FormGroup name)
+    [errorMessage]="'Invalid Email Address'"
     formControlName="email"
 >
 </rabi-input>

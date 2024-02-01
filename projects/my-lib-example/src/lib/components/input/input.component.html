@@ -13,10 +13,14 @@
         (blur)="onTouched()"
         [disabled]="isDisable"
     >
-    <div 
-        *ngIf="formField.hasError('required') && (formField.touched || formField.dirty)" 
-        style="color: red;"
-    >
+    <div *ngIf="formField.hasError('required') && (formField.touched || formField.dirty)" 
+        style="color: red;" >
         *Required Field couldn't be entry
+    </div>
+
+    <div 
+        *ngIf="formField.invalid && (formField.touched || formField.dirty)" 
+        style="color: red;">
+        {{errorMessage | titlecase }}
     </div>
 </div>

@@ -19,6 +19,7 @@ export class RabiInputComponent implements OnInit,ControlValueAccessor {
   @Input() setWidth!:string
   @Input() setHeight!:string
   @Input() type!:string
+  @Input() errorMessage!:string
   
   value!:string
   onChange!: (value:string) => void

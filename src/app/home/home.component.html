@@ -7,6 +7,7 @@
         [type]="'text'"
         [filedName]="'name'"
         [parentForm]="testForm"
+        [errorMessage]="''"
         formControlName="name"
     >
     </rabi-input>
@@ -19,6 +20,7 @@
         [type]="'email'"
         [filedName]="'email'"
         [parentForm]="testForm"
+        [errorMessage]="'Invalid Email Address'"
         formControlName="email"
     >
     </rabi-input>
@@ -31,11 +33,10 @@
         [type]="'password'"
         [filedName]="'password'"
         [parentForm]="testForm"
+        [errorMessage]="''"
         formControlName="password"
     >
     </rabi-input>
-
-    <button (click)="onClickForm()">SUBMIT</button>
 </form>
 
 
