@@ -1,0 +1,42 @@
+<form [formGroup]="testForm">
+    <rabi-input 
+        [labelText]="'Name'"
+        [placeholderText]="'Enter name'"
+        [setWidth]="'334px'"
+        [setHeight]="'40px'"
+        [type]="'text'"
+        [filedName]="'name'"
+        [parentForm]="testForm"
+        formControlName="name"
+    >
+    </rabi-input>
+
+    <rabi-input 
+        [labelText]="'Email'"
+        [placeholderText]="'Enter email'"
+        [setWidth]="'334px'"
+        [setHeight]="'40px'"
+        [type]="'email'"
+        [filedName]="'email'"
+        [parentForm]="testForm"
+        formControlName="email"
+    >
+    </rabi-input>
+
+    <rabi-input 
+        [labelText]="'Password'"
+        [placeholderText]="'Enter password'"
+        [setWidth]="'334px'"
+        [setHeight]="'40px'"
+        [type]="'password'"
+        [filedName]="'password'"
+        [parentForm]="testForm"
+        formControlName="password"
+    >
+    </rabi-input>
+
+    <button (click)="onClickForm()">SUBMIT</button>
+</form>
+
+
+<pre>{{testForm.value | json}}</pre>

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Manrope;
+    src: url('../../../assets/Manrope-Regular.ttf');
+}
+
+.inp-group{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+label{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(73, 67, 237, 0.886);
+}
+
+input{
+    width: auto;
+    font-family: Manrope;
+    font-size: 18px;
+    font-weight: 400;
+    border: .75px solid rgba(0, 17, 255, 0.776);
+    border-radius: 8px;
+    outline: 4px solid transparent;
+    &::placeholder{
+        color: rgba(131, 137, 137, 0.781);
+    }
+}
+
+input:hover,
+input:focus{
+    outline-color: rgba(161, 226, 254, 0.721);
+}
+
+.err-btn{
+    border: 1.5px solid rgba(241, 78, 78, 0.329);
+    outline: transparent;
+}
+
+.disableBtn{
+    background: rgba(133, 128, 128, 0.728);
+    outline: transparent;
+    border: none;
+}
