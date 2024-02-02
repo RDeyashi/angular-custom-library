@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { MyLibraryExampleModule } from 'my-lib-example';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MyLibraryExampleModule } from 'rabi-library';
 
 @NgModule({
   declarations: [
@@ -15,9 +15,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MyLibraryExampleModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MyLibraryExampleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
