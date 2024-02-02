@@ -8,6 +8,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class HomeComponent {
 
+  clickOption:any
+
   testForm: FormGroup = new FormGroup({
     name: new FormControl('', [Validators.required,]),
     email: new FormControl('', [Validators.required, Validators.email]),
@@ -16,7 +18,7 @@ export class HomeComponent {
 
   onClickForm(){
     console.log(this.testForm.value)
-
+    this.clickOption = this.testForm.value
   }
 
 }

@@ -1,43 +1,55 @@
-<form [formGroup]="testForm">
-    <rabi-input 
-        [labelText]="'Name'"
-        [placeholderText]="'Enter name'"
-        [setWidth]="'334px'"
-        [setHeight]="'40px'"
-        [type]="'text'"
-        [filedName]="'name'"
-        [parentForm]="testForm"
-        [errorMessage]="''"
-        formControlName="name"
-    >
-    </rabi-input>
+<div class="container">
+    <form [formGroup]="testForm">
+        <rabi-input 
+            [labelText]="'Name'"
+            [placeholderText]="'Enter name'"
+            [setWidth]="'334px'"
+            [setHeight]="'40px'"
+            [type]="'text'"
+            [filedName]="'name'"
+            [parentForm]="testForm"
+            [errorMessage]="''"
+            formControlName="name"
+        >
+        </rabi-input>
+    
+        <rabi-input 
+            [labelText]="'Email'"
+            [placeholderText]="'Enter email'"
+            [setWidth]="'334px'"
+            [setHeight]="'40px'"
+            [type]="'email'"
+            [filedName]="'email'"
+            [parentForm]="testForm"
+            [errorMessage]="'Invalid Email Address'"
+            formControlName="email"
+        >
+        </rabi-input>
+    
+        <rabi-input 
+            [labelText]="'Password'"
+            [placeholderText]="'Enter password'"
+            [setWidth]="'334px'"
+            [setHeight]="'40px'"
+            [type]="'password'"
+            [filedName]="'password'"
+            [parentForm]="testForm"
+            [errorMessage]="''"
+            formControlName="password"
+        >
+        </rabi-input>
+    
+        <rabi-button
+            [btnText]="'Submit'"
+            [btnWidth]="'92px'"
+            [btnHeight]="'48px'"
+            [btnType]="'primary'"
+            [isBtnDisable]="false"
+            [isBtnRound]="false"
+            (clickedBtnResponse)="onClickForm()"
+        >
+        </rabi-button>
+    </form>
 
-    <rabi-input 
-        [labelText]="'Email'"
-        [placeholderText]="'Enter email'"
-        [setWidth]="'334px'"
-        [setHeight]="'40px'"
-        [type]="'email'"
-        [filedName]="'email'"
-        [parentForm]="testForm"
-        [errorMessage]="'Invalid Email Address'"
-        formControlName="email"
-    >
-    </rabi-input>
-
-    <rabi-input 
-        [labelText]="'Password'"
-        [placeholderText]="'Enter password'"
-        [setWidth]="'334px'"
-        [setHeight]="'40px'"
-        [type]="'password'"
-        [filedName]="'password'"
-        [parentForm]="testForm"
-        [errorMessage]="''"
-        formControlName="password"
-    >
-    </rabi-input>
-</form>
-
-
-<pre>{{testForm.value | json}}</pre>
+    <pre>{{clickOption | json}}</pre>
+</div>

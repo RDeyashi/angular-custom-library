@@ -7,6 +7,9 @@
 "tslib": "^2.3.0"
 ```
 
+**Import**
+`Import MyLibraryExampleModule in your app module import section`
+
 ## 1. Input
 
 **Selector:** ```<rabi-input>```
@@ -28,4 +31,27 @@
 </rabi-input>
 ```
 
-give the property valu as instructed
+give the property value as instructed
+
+
+
+## 1. Button
+
+**Selector:** ```<rabi-button>```
+
+**How to use**
+
+```
+<rabi-button
+    [btnText]="'Submit'"
+    [btnWidth]="'92px'"
+    [btnHeight]="'48px'"
+    [btnType]="'primary'"
+    [isBtnDisable]="false"
+    [isBtnRound]="false"
+    (clickedBtnResponse)="onClickForm()"
+>
+</rabi-button>
+```
+
+give the property value as instructed and write the **onClickForm()** function logic to your .ts file
